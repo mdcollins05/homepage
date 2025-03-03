@@ -16,6 +16,7 @@ async function login(widget, service) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "User-Agent": "homepage",
     },
     body: JSON.stringify({
       password: widget.key,
